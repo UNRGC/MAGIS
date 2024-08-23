@@ -1,3 +1,69 @@
+@font-face {
+    font-family: "Impact-Font";
+    src: url("../fonts/impact.ttf") format("truetype");
+}
+
+* {
+    font-family: Impact-Font;
+}
+
 html {
     background-color: #242424;
+}
+
+.navbar {
+    align-content: center;
+    background-color: #fa6128;
+    height: 50px;
+    font-size: large;
+}
+.navbar .container-fluid {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.nav-item a {
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+.navbar button {
+    border: none;
+    --bs-focus-ring-color: rgba(0, 0, 0, 0);
+}
+.navbar button:active {
+    background-color: #0000000c;
+}
+#Logo:hover {
+    transform: scale(1.1);
+}
+#Menu:hover {
+    transform: scale(1.1);
+}
+.nav-item a:hover {
+    color: #fa6128;
+    background-color: white;
+    border-radius: 5px;
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        height: auto;
+        font-size: x-large;
+    }
+    .nav-item {
+        border-radius: 5px;
+        text-align: center;
+        background-color: #0000000c;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+    .nav-item a {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
 }
