@@ -86,10 +86,10 @@ html {
     /*-------------------- Navbar --------------------*/
     /*-------------------- Carrousel --------------------*/
     .carousel-caption h5 {
-        font-size: 1.5em;
+        font-size: 1em;
     }
     .carousel-caption p {
-        font-size: 1em;
+        font-size: 0.8em;
     }
     /*-------------------- Carrousel --------------------*/
 }
