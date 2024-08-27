@@ -86,7 +86,7 @@ html {
     /*-------------------- Navbar --------------------*/
     /*-------------------- Carrousel --------------------*/
     .carousel-caption {
-        background-color: none;
+        background-color: rgba(0, 0, 0, 0);
     }
     .carousel-caption h5 {
         background-color: rgba(0, 0, 0, 0.3);
