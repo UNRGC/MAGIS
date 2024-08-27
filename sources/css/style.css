@@ -2,6 +2,7 @@
     font-family: "Impact-Font";
     src: url("../fonts/impact.ttf") format("truetype");
 }
+@import url("https://fonts.googleapis.com/css?family=Exo:400,700");
 
 * {
     font-family: Impact-Font;
@@ -11,6 +12,7 @@ html {
     background-color: #242424;
 }
 
+/*-------------------- Navbar --------------------*/
 .navbar {
     align-content: center;
     background-color: #fa6128;
@@ -49,8 +51,23 @@ html {
     background-color: white;
     border-radius: 5px;
 }
+/*-------------------- Navbar --------------------*/
+/*-------------------- Carrousel --------------------*/
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+}
+.carousel-caption h5 {
+    font-size: 3.5em;
+}
+.carousel-caption p {
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, 0.9);
+}
+/*-------------------- Carrousel --------------------*/
 
 @media (max-width: 767px) {
+    /*-------------------- Navbar --------------------*/
     .navbar {
         height: auto;
         font-size: x-large;
@@ -66,4 +83,13 @@ html {
         padding-left: 20%;
         padding-right: 20%;
     }
+    /*-------------------- Navbar --------------------*/
+    /*-------------------- Carrousel --------------------*/
+    .carousel-caption h5 {
+        font-size: 2em;
+    }
+    .carousel-caption p {
+        font-size: 1em;
+    }
+    /*-------------------- Carrousel --------------------*/
 }
