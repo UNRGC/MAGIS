@@ -85,11 +85,18 @@ html {
     }
     /*-------------------- Navbar --------------------*/
     /*-------------------- Carrousel --------------------*/
+    .carousel-caption {
+        background-color: none;
+    }
     .carousel-caption h5 {
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
         font-size: 1.2rem;
     }
     .carousel-caption p {
-        font-size: 1rem;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        font-size: 0.5rem;
     }
     /*-------------------- Carrousel --------------------*/
 }
