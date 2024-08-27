@@ -9,123 +9,145 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     </head>
     <body>
-        <nav class="navbar navbar-expand-md">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#" title="Inicio"><img src="sources/img/Logo negativo.png" alt="Logo" height="40px" id="Logo" /></a>
-                <button class="navbar-toggler focus-ring" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span><img src="sources/img/Menu.png" alt="Menu" height="12px" id="Menu" /></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="#">Información</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#">Planes y precios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#">Demo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#">Contacto</a>
-                        </li>
-                    </ul>
+        <header>
+            <nav class="navbar navbar-expand-md">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#inicio" title="Inicio"><img src="sources/img/Logo negativo.png" alt="Logo" height="40px" id="Logo" /></a>
+                    <button class="navbar-toggler focus-ring" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span><img src="sources/img/Menu.png" alt="Menu" height="12px" id="Menu" /></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="#">Planes y precios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Descarga</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Demo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
 
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="3500">
-                    <picture>
-                        <source media="(max-width: 767px)" srcset="sources/img/estrenos_mv.jpg" />
-                        <source media="(min-width: 768px)" srcset="sources/img/estrenos.jpg" />
-                        <img src="sources/img/estrenos.jpg" class="d-block w-100" alt="Estrenos" />
-                    </picture>
-                    <div class="carousel-caption">
-                        <h5>Descubre los estrenos</h5>
-                        <p>Todos los estrenos del cine, directo a tu pantalla.</p>
+        <section id="inicio">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3500">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="sources/img/estrenos_mv.jpg" />
+                            <source media="(min-width: 768px)" srcset="sources/img/estrenos.jpg" />
+                            <img src="sources/img/estrenos.jpg" class="d-block w-100" alt="Estrenos" />
+                        </picture>
+                        <div class="carousel-caption">
+                            <h5>Descubre los estrenos</h5>
+                            <p>Lleva los últimos estrenos de cine directo a tu pantalla.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="3500">
-                    <picture>
-                        <source media="(max-width: 767px)" srcset="sources/img/peliculas_mv.jpg" />
-                        <source media="(min-width: 768px)" srcset="sources/img/peliculas.jpg" />
-                        <img src="sources/img/peliculas.jpg" class="d-block w-100" alt="Películas" />
-                    </picture>
-                    <div class="carousel-caption">
-                        <h5>Encuentra películas</h5>
-                        <p>Todas tus películas favoritas en un solo lugar.</p>
+                    <div class="carousel-item" data-bs-interval="3500">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="sources/img/peliculas_mv.jpg" />
+                            <source media="(min-width: 768px)" srcset="sources/img/peliculas.jpg" />
+                            <img src="sources/img/peliculas.jpg" class="d-block w-100" alt="Películas" />
+                        </picture>
+                        <div class="carousel-caption">
+                            <h5>Explora películas</h5>
+                            <p>Encuentra todas tus películas favoritas en un solo lugar.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="3500">
-                    <picture>
-                        <source media="(max-width: 767px)" srcset="sources/img/series_mv.jpg" />
-                        <source media="(min-width: 768px)" srcset="sources/img/series.jpg" />
-                        <img src="sources/img/series.jpg" class="d-block w-100" alt="Series" />
-                    </picture>
-                    <div class="carousel-caption">
-                        <h5>Descubre series</h5>
-                        <p>No te pierdas todas las series populares del momento.</p>
+                    <div class="carousel-item" data-bs-interval="3500">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="sources/img/series_mv.jpg" />
+                            <source media="(min-width: 768px)" srcset="sources/img/series.jpg" />
+                            <img src="sources/img/series.jpg" class="d-block w-100" alt="Series" />
+                        </picture>
+                        <div class="carousel-caption">
+                            <h5>Sumérgete en series</h5>
+                            <p>No te pierdas las series más populares del momento.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="3500">
-                    <picture>
-                        <source media="(max-width: 767px)" srcset="sources/img/anime_mv.jpg" />
-                        <source media="(min-width: 768px)" srcset="sources/img/anime.jpg" />
-                        <img src="sources/img/anime.jpg" class="d-block w-100" alt="Anime" />
-                    </picture>
-                    <div class="carousel-caption">
-                        <h5>Disfruta del anime</h5>
-                        <p>Todos los animes clásicos y populares para disfrutar.</p>
+                    <div class="carousel-item" data-bs-interval="3500">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="sources/img/anime_mv.jpg" />
+                            <source media="(min-width: 768px)" srcset="sources/img/anime.jpg" />
+                            <img src="sources/img/anime.jpg" class="d-block w-100" alt="Anime" />
+                        </picture>
+                        <div class="carousel-caption">
+                            <h5>Disfruta del mejor anime</h5>
+                            <p>Accede a una selección de animes clásicos y actuales.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="3500">
-                    <picture>
-                        <source media="(max-width: 767px)" srcset="sources/img/animaciones_mv.jpg" />
-                        <source media="(min-width: 768px)" srcset="sources/img/animaciones.jpg" />
-                        <img src="sources/img/animaciones.jpg" class="d-block w-100" alt="Animación" />
-                    </picture>
-                    <div class="carousel-caption">
-                        <h5>Diviértete con la animación</h5>
-                        <p>Disfruta del contenido animado para todas las edades.</p>
+                    <div class="carousel-item" data-bs-interval="3500">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="sources/img/animaciones_mv.jpg" />
+                            <source media="(min-width: 768px)" srcset="sources/img/animaciones.jpg" />
+                            <img src="sources/img/animaciones.jpg" class="d-block w-100" alt="Animación" />
+                        </picture>
+                        <div class="carousel-caption">
+                            <h5>Diviértete con animación</h5>
+                            <p>Contenidos animados para todos los gustos.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="3500">
-                    <picture>
-                        <source media="(max-width: 767px)" srcset="sources/img/documentales_mv.jpg" />
-                        <source media="(min-width: 768px)" srcset="sources/img/documentales.jpg" />
-                        <img src="sources/img/documentales.jpg" class="d-block w-100" alt="Documentales" />
-                    </picture>
-                    <div class="carousel-caption">
-                        <h5>Asombrosos documentales</h5>
-                        <p>Descubre nuevos mundos y maravillosos ambientes.</p>
+                    <div class="carousel-item" data-bs-interval="3500">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="sources/img/documentales_mv.jpg" />
+                            <source media="(min-width: 768px)" srcset="sources/img/documentales.jpg" />
+                            <img src="sources/img/documentales.jpg" class="d-block w-100" alt="Documentales" />
+                        </picture>
+                        <div class="carousel-caption">
+                            <h5>Asombrosos documentales</h5>
+                            <p>Explora nuevos mundos y descubre historias fascinantes.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="3500">
-                    <picture>
-                        <source media="(max-width: 767px)" srcset="sources/img/deportes_mv.jpg" />
-                        <source media="(min-width: 768px)" srcset="sources/img/deportes.jpg" />
-                        <img src="sources/img/deportes.jpg" class="d-block w-100" alt="Deportes" />
-                    </picture>
-                    <div class="carousel-caption">
-                        <h5>Sigue tus deportes</h5>
-                        <p>Celebra tu deporte favorito, no importa cuál sea.</p>
+                    <div class="carousel-item" data-bs-interval="3500">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="sources/img/deportes_mv.jpg" />
+                            <source media="(min-width: 768px)" srcset="sources/img/deportes.jpg" />
+                            <img src="sources/img/deportes.jpg" class="d-block w-100" alt="Deportes" />
+                        </picture>
+                        <div class="carousel-caption">
+                            <h5>Vive el deporte</h5>
+                            <p>Sigue la emoción de tus deportes favoritos en cualquier momento.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="3500">
-                    <picture>
-                        <source media="(max-width: 767px)" srcset="sources/img/canales_mv.jpg" />
-                        <source media="(min-width: 768px)" srcset="sources/img/canales.jpg" />
-                        <img src="sources/img/canales.jpg" class="d-block w-100" alt="Canales" />
-                    </picture>
-                    <div class="carousel-caption">
-                        <h5>Canales en vivo</h5>
-                        <p>No te pierdas tu show favorito, totalmente en vivo.</p>
+                    <div class="carousel-item" data-bs-interval="3500">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="sources/img/canales_mv.jpg" />
+                            <source media="(min-width: 768px)" srcset="sources/img/canales.jpg" />
+                            <img src="sources/img/canales.jpg" class="d-block w-100" alt="Canales" />
+                        </picture>
+                        <div class="carousel-caption">
+                            <h5>Canales en vivo</h5>
+                            <p>No te pierdas ni un segundo de tus shows favoritos, todo en vivo.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <article class="bienvenida">
+            <div class="img">
+                <img src="sources/img/Dispositivos.png" alt="Bienvenida" />
+            </div>
+            <div class="text">
+                <h1 style="color: #ff692d">¡Bienvenido a Magis TV!</h1>
+                <h4>Tu fuente de entretenimiento sin límites. Aquí encontrarás todo lo que amas: las últimas películas, series, anime, documentales, deportes en vivo y más, todo en un solo lugar. Disfruta de la mejor experiencia con contenido actualizado constantemente, sin la necesidad de cambiar de plataforma. Simplifica tu entretenimiento ¡Empieza a explorar y deja que la diversión comience!</h4>
+            </div>
+        </article>
+
+        <section class="inicio">
+            <div>
+                <img src="sources/img/Logo negativo.png" alt="Logo" />
+                <h1>La mejor opción para el entretenimiento</h1>
+                <p>Ahorra y disfruta con Magis TV. Accede a todo tu contenido favorito en un solo lugar, sin complicaciones y con un único pago.</p>
+            </div>
+        </section>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
