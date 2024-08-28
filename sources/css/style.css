@@ -1,15 +1,27 @@
+/*-------------------- Generales --------------------*/
 @font-face {
     font-family: "Impact-Font";
     src: url("../fonts/impact.ttf") format("truetype");
 }
-
 * {
     font-family: Impact-Font;
 }
-
 html {
     background-color: #242424;
 }
+.titulo {
+    font-size: 2rem;
+}
+.subtitulo1 {
+    font-size: 1.4rem;
+}
+.subtitulo2 {
+    font-size: 1.2rem;
+}
+.texto {
+    font-size: 1rem;
+}
+/*-------------------- Generales --------------------*/
 /*-------------------- Navbar --------------------*/
 header {
     position: sticky;
@@ -18,10 +30,9 @@ header {
 }
 .navbar {
     align-content: center;
-    background: linear-gradient(to right, #ff692d, #ff9b4d);
+    background: linear-gradient(to right, #ff692d, #ff8b33);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     height: 50px;
-    font-size: large;
 }
 .navbar .container-fluid {
     padding-left: 20px;
@@ -65,14 +76,8 @@ header {
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 30px;
 }
-.carousel-caption h5 {
-    font-size: 3.5em;
-}
-.carousel-caption p {
-    font-size: 1.5em;
-    color: rgba(255, 255, 255, 0.9);
-}
 /*-------------------- Carrousel --------------------*/
+/*-------------------- Bienvenida --------------------*/
 .bienvenida {
     display: flex;
     background-color: #242424;
@@ -87,29 +92,30 @@ header {
     padding-bottom: 20px;
 }
 .bienvenida .img {
-    padding-left: 40px;
+    padding-left: 80px;
     padding-right: 20px;
 }
 .bienvenida .text {
     padding-left: 20px;
-    padding-right: 40px;
+    padding-right: 80px;
 }
 .bienvenida img {
-    height: 13rem;
+    height: 20rem;
 }
 .bienvenida h4 {
     text-align: justify;
 }
-/*-------------------- Inicio --------------------*/
-.inicio {
+/*-------------------- Bienvenida --------------------*/
+/*-------------------- Planes --------------------*/
+.planes {
     background-color: #242424;
     padding: 20px;
 }
-.inicio img {
-    height: 6rem;
+.planes img {
+    height: 8rem;
 }
-.inicio div {
-    background: linear-gradient(to bottom, #ff692d, #ff9b4d);
+.planes div {
+    background: linear-gradient(to bottom, #ff692d, #ff8b33);
     border-radius: 10px;
     text-align: center;
     align-items: center;
@@ -119,17 +125,84 @@ header {
     padding-left: 80px;
     padding-right: 80px;
 }
-.inicio p {
-    font-size: 1.4rem;
+.divisa {
+    display: flex;
+    justify-content: center;
 }
-/*-------------------- Inicio --------------------*/
+.form-select {
+    width: 5rem !important;
+    height: fit-content !important;
+}
+.planes select {
+    border: none;
+    --bs-focus-ring-color: rgba(0, 0, 0, 0);
+}
+.precios {
+    background-color: #242424;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+.card .card-header {
+    background: linear-gradient(to right, #ff692d, #ff8b33);
+    color: white;
+}
+.card .card-body {
+    height: 100%;
+    background-color: #191919;
+    color: white;
+}
+.card .card-title {
+    color: #ff8b33;
+}
+.card small {
+    color: #fda663;
+}
+.card button {
+    background: linear-gradient(to bottom, #ff692d, #ff8b33);
+    color: white;
+}
+/*-------------------- Planes --------------------*/
 
-/*-------------------- Dimensiones --------------------*/
+/*---------------------------------------- Dimensiones ----------------------------------------*/
+@media (max-width: 1366px) {
+    /*-------------------- Bienvenida --------------------*/
+    .bienvenida img {
+        height: 13rem;
+    }
+    .bienvenida .img {
+        padding-left: 40px;
+        padding-right: 20px;
+    }
+    .bienvenida .text {
+        padding-left: 20px;
+        padding-right: 40px;
+    }
+    /*-------------------- Bienvenida --------------------*/
+    /*-------------------- Inicio --------------------*/
+    .inicio img {
+        height: 6rem;
+    }
+    /*-------------------- Inicio --------------------*/
+}
 @media (max-width: 767px) {
+    /*-------------------- Generales --------------------*/
+    .titulo {
+        font-size: 1.5rem;
+    }
+    .subtitulo1 {
+        font-size: 1.2rem;
+    }
+    .subtitulo2 {
+        font-size: 1.2rem;
+    }
+    .texto {
+        font-size: 1rem;
+    }
+    /*-------------------- Generales --------------------*/
     /*-------------------- Navbar --------------------*/
     .navbar {
         height: auto;
-        font-size: large;
     }
     .nav-item {
         border-radius: 5px;
@@ -144,24 +217,11 @@ header {
     }
     /*-------------------- Navbar --------------------*/
     /*-------------------- Carrousel --------------------*/
-    .carousel-caption h5 {
-        font-size: 1.2rem;
-    }
-    .carousel-caption p {
-        font-size: 0.8rem;
+    .carousel-caption #esconder {
+        display: none;
     }
     /*-------------------- Carrousel --------------------*/
-    /*-------------------- Inicio --------------------*/
-    .inicio img {
-        height: 4.5rem;
-    }
-    .inicio div {
-        padding: 20px;
-    }
-    .inicio p {
-        font-size: 1.1rem;
-    }
-    /*-------------------- Inicio --------------------*/
+    /*-------------------- Bienvenida --------------------*/
     .bienvenida {
         display: block;
     }
@@ -183,7 +243,15 @@ header {
     }
     .bienvenida h4 {
         text-align: center;
-        font-size: 1.1rem;
     }
+    /*-------------------- Bienvenida --------------------*/
+    /*-------------------- Planes --------------------*/
+    .planes img {
+        height: 4.5rem;
+    }
+    .planes div {
+        padding: 20px;
+    }
+    /*-------------------- Planes --------------------*/
 }
-/*-------------------- Dimensiones --------------------*/
+/*---------------------------------------- Dimensiones ----------------------------------------*/

@@ -6,6 +6,7 @@
         <title>Magis TV</title>
         <link rel="icon" href="sources/img/Icono.png" />
         <link rel="stylesheet" href="sources/css/style.css" />
+        <script src="sources/js/main.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     </head>
     <body>
@@ -17,18 +18,18 @@
                         <span><img src="sources/img/Menu.png" alt="Menu" height="12px" id="Menu" /></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
+                        <ul class="list-unstyled navbar-nav">
                             <li class="nav-item">
-                                <a href="#">Planes y precios</a>
+                                <a href="#precios" class="subtitulo2">Planes y precios</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#">Descarga</a>
+                                <a href="#" class="subtitulo2">Descarga</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#">Demo</a>
+                                <a href="#" class="subtitulo2">Demo</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#">Contacto</a>
+                                <a href="#" class="subtitulo2">Contacto</a>
                             </li>
                         </ul>
                     </div>
@@ -46,8 +47,8 @@
                             <img src="sources/img/estrenos.jpg" class="d-block w-100" alt="Estrenos" />
                         </picture>
                         <div class="carousel-caption">
-                            <h5>Descubre los estrenos</h5>
-                            <p>Lleva los últimos estrenos de cine directo a tu pantalla.</p>
+                            <p class="titulo">Descubre los estrenos</p>
+                            <p class="subtitulo2" id="esconder">Lleva los últimos estrenos de cine directo a tu pantalla.</p>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="3500">
@@ -57,8 +58,8 @@
                             <img src="sources/img/peliculas.jpg" class="d-block w-100" alt="Películas" />
                         </picture>
                         <div class="carousel-caption">
-                            <h5>Explora películas</h5>
-                            <p>Encuentra todas tus películas favoritas en un solo lugar.</p>
+                            <p class="titulo">Explora películas</p>
+                            <p class="subtitulo2" id="esconder">Encuentra todas tus películas favoritas en un solo lugar.</p>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="3500">
@@ -68,8 +69,8 @@
                             <img src="sources/img/series.jpg" class="d-block w-100" alt="Series" />
                         </picture>
                         <div class="carousel-caption">
-                            <h5>Sumérgete en series</h5>
-                            <p>No te pierdas las series más populares del momento.</p>
+                            <p class="titulo">Sumérgete en series</p>
+                            <p class="subtitulo2" id="esconder">No te pierdas las series más populares del momento.</p>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="3500">
@@ -79,8 +80,8 @@
                             <img src="sources/img/anime.jpg" class="d-block w-100" alt="Anime" />
                         </picture>
                         <div class="carousel-caption">
-                            <h5>Disfruta del mejor anime</h5>
-                            <p>Accede a una selección de animes clásicos y actuales.</p>
+                            <p class="titulo">Disfruta del mejor anime</p>
+                            <p class="subtitulo2" id="esconder">Accede a una selección de animes clásicos y actuales.</p>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="3500">
@@ -90,8 +91,8 @@
                             <img src="sources/img/animaciones.jpg" class="d-block w-100" alt="Animación" />
                         </picture>
                         <div class="carousel-caption">
-                            <h5>Diviértete con animación</h5>
-                            <p>Contenidos animados para todos los gustos.</p>
+                            <p class="titulo">Diviértete con animación</p>
+                            <p class="subtitulo2" id="esconder">Contenidos animados para todos los gustos.</p>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="3500">
@@ -101,8 +102,8 @@
                             <img src="sources/img/documentales.jpg" class="d-block w-100" alt="Documentales" />
                         </picture>
                         <div class="carousel-caption">
-                            <h5>Asombrosos documentales</h5>
-                            <p>Explora nuevos mundos y descubre historias fascinantes.</p>
+                            <p class="titulo">Asombrate con los documentales</p>
+                            <p class="subtitulo2" id="esconder">Explora nuevos mundos y descubre historias fascinantes.</p>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="3500">
@@ -112,8 +113,8 @@
                             <img src="sources/img/deportes.jpg" class="d-block w-100" alt="Deportes" />
                         </picture>
                         <div class="carousel-caption">
-                            <h5>Vive el deporte</h5>
-                            <p>Sigue la emoción de tus deportes favoritos en cualquier momento.</p>
+                            <p class="titulo">Vive el deporte</p>
+                            <p class="subtitulo2" id="esconder">Sigue la emoción de tus deportes favoritos en cualquier momento.</p>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="3500">
@@ -123,8 +124,8 @@
                             <img src="sources/img/canales.jpg" class="d-block w-100" alt="Canales" />
                         </picture>
                         <div class="carousel-caption">
-                            <h5>Canales en vivo</h5>
-                            <p>No te pierdas ni un segundo de tus shows favoritos, todo en vivo.</p>
+                            <p class="titulo">Canales en vivo</p>
+                            <p class="subtitulo2" id="esconder">No te pierdas ni un segundo de tus shows favoritos, todo en vivo.</p>
                         </div>
                     </div>
                 </div>
@@ -136,16 +137,105 @@
                 <img src="sources/img/Dispositivos.png" alt="Bienvenida" />
             </div>
             <div class="text">
-                <h1 style="color: #ff692d">¡Bienvenido a Magis TV!</h1>
-                <h4>Tu fuente de entretenimiento sin límites. Aquí encontrarás todo lo que amas: las últimas películas, series, anime, documentales, deportes en vivo y más, todo en un solo lugar. Disfruta de la mejor experiencia con contenido actualizado constantemente, sin la necesidad de cambiar de plataforma. Simplifica tu entretenimiento ¡Empieza a explorar y deja que la diversión comience!</h4>
+                <p class="titulo" style="color: #ff692d">¡Bienvenido a Magis TV!</p>
+                <p class="subtitulo1">Tu fuente de entretenimiento sin límites. Aquí encontrarás todo lo que amas: las últimas películas, series, anime, documentales, deportes en vivo y más, todo en un solo lugar. Disfruta de la mejor experiencia con contenido actualizado constantemente, sin la necesidad de cambiar de plataforma. Simplifica tu entretenimiento ¡Empieza a explorar y deja que la diversión comience!</p>
             </div>
         </article>
 
-        <section class="inicio">
+        <section class="planes" id="precios">
             <div>
                 <img src="sources/img/Logo negativo.png" alt="Logo" />
-                <h1>La mejor opción para el entretenimiento</h1>
-                <p>Ahorra y disfruta con Magis TV. Accede a todo tu contenido favorito en un solo lugar, sin complicaciones y con un único pago.</p>
+                <p class="titulo">La mejor opción para el entretenimiento</p>
+                <p class="subtitulo1">Ahorra y disfruta con Magis TV. Accede a todo tu contenido favorito en un solo lugar, sin complicaciones y con un único pago.</p>
+                <section class="divisa">
+                    <p class="subtitulo2 px-2">Moneda de compra:</p>
+                    <select class="form-select subtitulo2 focus-ring" id="currency" onchange="convert()">
+                        <option selected>USD</option>
+                        <option>EUR</option>
+                        <option>MXN</option>
+                    </select>
+                </section>
+            </div>
+        </section>
+
+        <section class="precios">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 mb-3 text-center">
+                <div class="col">
+                    <div class="card border-0 mb-4 rounded-3">
+                        <div class="card-header py-3">
+                            <h2 class="my-0 fw-normal">1 Mes</h2>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title" id="price1">$9<small>.00</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4 subtitulo1">
+                                <li>3 Conexiones</li>
+                                <li>+1300 Canales</li>
+                                <li>Contenido VOD</li>
+                                <li>Estrenos de cine</li>
+                                <li>Demostración gratis</li>
+                                <li>Actualización automática</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg">Contratar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 mb-4 rounded-3">
+                        <div class="card-header py-3">
+                            <h2 class="my-0 fw-normal">3 Meses</h2>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title" id="price2">$26<small>.99</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4 subtitulo1">
+                                <li>3 Conexiones</li>
+                                <li>+1300 Canales</li>
+                                <li>Contenido VOD</li>
+                                <li>Estrenos de cine</li>
+                                <li>Demostración gratis</li>
+                                <li>Actualización automática</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg">Contratar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 mb-4 rounded-3">
+                        <div class="card-header py-3">
+                            <h2 class="my-0 fw-normal">6 Meses | -5%</h2>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title" id="price3">$50<small>.99</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4 subtitulo1">
+                                <li>+1 Mes gratis</li>
+                                <li>3 Conexiones</li>
+                                <li>+1300 Canales</li>
+                                <li>Contenido VOD</li>
+                                <li>Estrenos de cine</li>
+                                <li>Actualización automática</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg">Contratar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 mb-4 rounded-3">
+                        <div class="card-header py-3">
+                            <h2 class="my-0 fw-normal">1 Año | -15%</h2>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title" id="price4">$90<small>.99</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4 subtitulo1">
+                                <li>+2 Meses gratis</li>
+                                <li>3 Conexiones</li>
+                                <li>+1300 Canales</li>
+                                <li>Contenido VOD</li>
+                                <li>Estrenos de cine</li>
+                                <li>Actualización automática</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg">Contratar</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
