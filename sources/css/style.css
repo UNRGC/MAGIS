@@ -50,10 +50,9 @@ header {
 }
 .navbar button {
     border: none;
-    --bs-focus-ring-color: rgba(0, 0, 0, 0);
+    --bs-focus-ring-color: transparent;
 }
 .navbar button:active {
-    background-color: #0000000c;
     transform: scale(0.8);
 }
 #Logo:hover {
@@ -68,20 +67,11 @@ header {
     border-radius: 5px;
 }
 /*-------------------- Navbar --------------------*/
-/*-------------------- Carrousel --------------------*/
-.carousel {
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-}
-.carousel-caption {
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 30px;
-}
-/*-------------------- Carrousel --------------------*/
 /*-------------------- Bienvenida --------------------*/
 .bienvenida {
     display: flex;
     background-color: #242424;
-    padding-top: 20px;
+    padding-top: 40px;
 }
 .bienvenida div {
     display: block;
@@ -109,7 +99,10 @@ header {
 /*-------------------- Planes --------------------*/
 .planes {
     background-color: #242424;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 .planes img {
     height: 8rem;
@@ -132,43 +125,183 @@ header {
 .form-select {
     width: 5rem !important;
     height: fit-content !important;
+    color: #ff692d !important;
 }
 .planes select {
     border: none;
-    --bs-focus-ring-color: rgba(0, 0, 0, 0);
+    --bs-focus-ring-color: transparent;
+}
+.planes option::select {
+    background-color: #ff692d;
 }
 .precios {
     background-color: #242424;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 10px;
 }
-.card .card-header {
+.precios .card {
+    border: solid 2px #ff8b33 !important;
+    margin-bottom: 40px;
+}
+.precios .card .card-header {
     background: linear-gradient(to right, #ff692d, #ff8b33);
     color: white;
 }
-.card .card-body {
+.precios .card .card-body {
     height: 100%;
     background-color: #191919;
     color: white;
 }
-.card .card-title {
+.precios .card .card-title {
     color: #ff8b33;
 }
-.card small {
+.precios .card small {
     color: #fda663;
 }
-.card button {
+.precios .card button {
     background: linear-gradient(to bottom, #ff692d, #ff8b33);
     color: white;
+    border: none;
+}
+.precios .card button:active {
+    transform: scale(0.95);
 }
 /*-------------------- Planes --------------------*/
+/*-------------------- Carrousel --------------------*/
+.carrousel-fondo {
+    background-color: #242424;
+}
+.carousel {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.carousel-inner {
+    border-radius: 10px;
+}
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    padding: 0px !important;
+    height: fit-content !important;
+}
+.carousel-caption p {
+    margin-bottom: 7px;
+}
+/*-------------------- Carrousel --------------------*/
+/*-------------------- Demo --------------------*/
+.demo-fondo {
+    background-color: #242424;
+    padding-top: 40px;
+}
+.demo {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.demo div {
+    align-items: center;
+    color: white;
+}
+.demo img {
+    height: 20rem;
+    padding-left: 20px;
+    padding-right: 40px;
+}
+.demo .text {
+    padding-left: 40px;
+    padding-right: 20px;
+}
+.demo button {
+    background: linear-gradient(to left, #f1d294, #ff991f);
+    animation: attractive-background 1s infinite;
+    color: #191919 !important;
+    border: none;
+}
+.demo button:hover {
+    animation-play-state: paused;
+    background-color: #f1d294;
+    color: #191919 !important;
+}
+.demo button:active {
+    transform: scale(0.95);
+    background: linear-gradient(to left, #f1d294, #ff991f);
+}
+@keyframes attractive-background {
+    0% {
+        scale: 1;
+    }
+    50% {
+        scale: 1.05;
+    }
+    100% {
+        scale: 1;
+    }
+}
+/*-------------------- Demo --------------------*/
+/*-------------------- Descargas --------------------*/
+.directo {
+    background: linear-gradient(to top, #12c921, #00d40b) !important;
+}
+.onedrive {
+    background: linear-gradient(to top, #1490df, #0078d4) !important;
+}
+.descargas {
+    background-color: #242424;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.descargas img {
+    height: 8rem;
+}
+.descargas div {
+    background: linear-gradient(to bottom, #12c921, #00d40b);
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.descargas-card {
+    background-color: #242424;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.descargas-card .card {
+    border: solid 2px #00d40b !important;
+    margin-bottom: 40px;
+}
+.descargas-card .card .card-header {
+    background: linear-gradient(to right, #12c921, #00d40b);
+    color: white;
+}
+.descargas-card .card .card-body {
+    height: 100%;
+    background-color: #191919;
+    color: white;
+}
+.descargas-card .card button {
+    background: linear-gradient(to bottom, #12c921, #00d40b);
+    color: white;
+    border: none;
+}
+.descargas-card .card button:active {
+    transform: scale(0.95);
+}
+/*-------------------- Descargas --------------------*/
 
 /*---------------------------------------- Dimensiones ----------------------------------------*/
 @media (max-width: 1366px) {
     /*-------------------- Bienvenida --------------------*/
     .bienvenida img {
-        height: 13rem;
+        height: 15rem;
     }
     .bienvenida .img {
         padding-left: 40px;
@@ -191,7 +324,7 @@ header {
         font-size: 1.5rem;
     }
     .subtitulo1 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
     .subtitulo2 {
         font-size: 1.1rem;
@@ -205,25 +338,24 @@ header {
         height: auto;
     }
     .nav-item {
-        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.12);
+        border-radius: 6px;
         text-align: center;
-        background-color: #0000000c;
         padding: 5px;
-        margin-bottom: 5px;
+        margin-bottom: 6px;
     }
     .nav-item a {
-        padding-left: 20%;
-        padding-right: 20%;
+        padding-left: calc(50% - 2.9rem);
+        padding-right: calc(50% - 2.9rem);
+    }
+    .nav-item:hover {
+        background-color: white;
     }
     /*-------------------- Navbar --------------------*/
-    /*-------------------- Carrousel --------------------*/
-    .carousel-caption #esconder {
-        display: none;
-    }
-    /*-------------------- Carrousel --------------------*/
     /*-------------------- Bienvenida --------------------*/
     .bienvenida {
         display: block;
+        padding-top: 20px;
     }
     .bienvenida div {
         padding-top: 15px;
@@ -231,27 +363,75 @@ header {
         text-align: center;
     }
     .bienvenida .img {
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     .bienvenida .text {
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     .bienvenida img {
         height: 11rem;
     }
-    .bienvenida h4 {
-        text-align: center;
-    }
     /*-------------------- Bienvenida --------------------*/
     /*-------------------- Planes --------------------*/
+    .planes {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
     .planes img {
         height: 4.5rem;
     }
     .planes div {
         padding: 20px;
     }
+    .precios .card {
+        margin-bottom: 20px;
+    }
     /*-------------------- Planes --------------------*/
+    /*-------------------- Demo --------------------*/
+    .demo-fondo {
+        padding-top: 20px;
+    }
+    .demo {
+        display: block;
+        text-align: center;
+    }
+    .demo img {
+        height: 11rem;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .demo .text {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .demo button {
+        font-size: large;
+    }
+    /*-------------------- Demo --------------------*/
+    /*-------------------- Carrousel --------------------*/
+    .carousel-caption p {
+        margin-bottom: 0px;
+    }
+    .carousel-caption #esconder {
+        display: none;
+    }
+    /*-------------------- Carrousel --------------------*/
+    /*-------------------- Descargas --------------------*/
+    .descargas img {
+        height: 4.5rem;
+    }
+    .descargas div {
+        padding: 20px;
+    }
+    .descargas {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .descargas-card .card {
+        margin-bottom: 20px;
+    }
+    /*-------------------- Descargas --------------------*/
 }
 /*---------------------------------------- Dimensiones ----------------------------------------*/
