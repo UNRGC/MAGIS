@@ -10,16 +10,26 @@ html {
     background-color: #242424;
 }
 .titulo {
-    font-size: 2rem;
+    font-size: 3rem;
 }
-.subtitulo1 {
+.subtitulo {
     font-size: 1.4rem;
 }
-.subtitulo2 {
-    font-size: 1.2rem;
+.btn-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
 }
-.texto {
-    font-size: 1rem;
+.btn-float img {
+    width: 4rem;
+    height: 4rem;
+}
+.btn-float:hover {
+    transform: scale(1.1);
 }
 /*-------------------- Generales --------------------*/
 /*-------------------- Navbar --------------------*/
@@ -92,7 +102,7 @@ header {
 .bienvenida img {
     height: 20rem;
 }
-.bienvenida h4 {
+.bienvenida p {
     text-align: justify;
 }
 /*-------------------- Bienvenida --------------------*/
@@ -242,9 +252,7 @@ header {
 }
 /*-------------------- Demo --------------------*/
 /*-------------------- Descargas --------------------*/
-.directo {
-    background: linear-gradient(to top, #12c921, #00d40b) !important;
-}
+
 .onedrive {
     background: linear-gradient(to top, #1490df, #0078d4) !important;
 }
@@ -259,7 +267,7 @@ header {
     height: 8rem;
 }
 .descargas div {
-    background: linear-gradient(to bottom, #12c921, #00d40b);
+    background: linear-gradient(to bottom, #ff692d, #ff8b33);
     border-radius: 10px;
     text-align: center;
     align-items: center;
@@ -269,36 +277,72 @@ header {
     padding-left: 80px;
     padding-right: 80px;
 }
-.descargas-card {
-    background-color: #242424;
-    padding-left: 20px;
+/*-------------------- Descargas --------------------*/
+/*-------------------- Contacto --------------------*/
+.contacto {
+    display: flex;
+    justify-content: center;
+    background-color: #191919;
+}
+.contacto div {
+    align-content: center;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.contacto .img {
+    padding-left: 40px;
     padding-right: 20px;
 }
-.descargas-card .card {
-    border: solid 2px #00d40b !important;
-    margin-bottom: 40px;
+.contacto .text {
+    padding-left: 20px;
+    padding-right: 40px;
 }
-.descargas-card .card .card-header {
-    background: linear-gradient(to right, #12c921, #00d40b);
+.contacto img {
+    height: 20rem;
+}
+.icono {
+    width: 5rem;
+    height: 5rem !important;
+}
+.correo {
+    width: 3rem;
+    height: auto !important;
+}
+.enlace a {
+    text-decoration: none;
+}
+.enlace:hover {
+    transform: scale(1.1);
+}
+/*-------------------- Contacto --------------------*/
+/*-------------------- Footer --------------------*/
+footer {
+    background-color: #242424;
     color: white;
+    padding-top: 40px;
+    text-align: center;
 }
-.descargas-card .card .card-body {
-    height: 100%;
-    background-color: #191919;
-    color: white;
+footer .row {
+    background: linear-gradient(to right, #ff692d, #ff8b33);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-.descargas-card .card button {
-    background: linear-gradient(to bottom, #12c921, #00d40b);
-    color: white;
-    border: none;
+footer .col {
+    border-left: solid 1px rgba(255, 255, 255, 0.2);
+    border-right: solid 1px rgba(255, 255, 255, 0.2);
 }
-.descargas-card .card button:active {
-    transform: scale(0.95);
-}
-/*-------------------- Descargas --------------------*/
-
+/*-------------------- Footer --------------------*/
 /*---------------------------------------- Dimensiones ----------------------------------------*/
 @media (max-width: 1366px) {
+    /*-------------------- Generales --------------------*/
+    .titulo {
+        font-size: 2rem;
+    }
+    .subtitulo {
+        font-size: 1.2rem;
+    }
+    /*-------------------- Generales --------------------*/
     /*-------------------- Bienvenida --------------------*/
     .bienvenida img {
         height: 15rem;
@@ -312,25 +356,30 @@ header {
         padding-right: 40px;
     }
     /*-------------------- Bienvenida --------------------*/
-    /*-------------------- Inicio --------------------*/
-    .inicio img {
-        height: 6rem;
+    /*-------------------- Demo --------------------*/
+    .demo img {
+        height: 15rem;
+        padding-left: 20px;
+        padding-right: 40px;
     }
-    /*-------------------- Inicio --------------------*/
+    /*-------------------- Demo --------------------*/
+    /*-------------------- Contacto --------------------*/
+    .contacto img {
+        height: 15rem;
+    }
+    /*-------------------- Contacto --------------------*/
 }
 @media (max-width: 767px) {
     /*-------------------- Generales --------------------*/
     .titulo {
         font-size: 1.5rem;
     }
-    .subtitulo1 {
-        font-size: 1.3rem;
-    }
-    .subtitulo2 {
+    .subtitulo {
         font-size: 1.1rem;
     }
-    .texto {
-        font-size: 1rem;
+    .btn-float img {
+        width: 3rem;
+        height: 3rem;
     }
     /*-------------------- Generales --------------------*/
     /*-------------------- Navbar --------------------*/
@@ -373,6 +422,9 @@ header {
     .bienvenida img {
         height: 11rem;
     }
+    .bienvenida p {
+        text-align: center;
+    }
     /*-------------------- Bienvenida --------------------*/
     /*-------------------- Planes --------------------*/
     .planes {
@@ -414,7 +466,7 @@ header {
     .carousel-caption p {
         margin-bottom: 0px;
     }
-    .carousel-caption #esconder {
+    #esconder {
         display: none;
     }
     /*-------------------- Carrousel --------------------*/
@@ -433,5 +485,36 @@ header {
         margin-bottom: 20px;
     }
     /*-------------------- Descargas --------------------*/
+    /*-------------------- Contacto --------------------*/
+    .contacto {
+        display: block;
+        padding-top: 20px;
+    }
+    .contacto div {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+    .contacto .img {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .contacto .text {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .contacto img {
+        height: 11rem;
+    }
+    .correo {
+        width: 2rem;
+        height: auto !important;
+    }
+    /*-------------------- Contacto --------------------*/
+    /*-------------------- Footer --------------------*/
+    footer {
+        padding-top: 20px;
+    }
+    /*-------------------- Footer --------------------*/
 }
 /*---------------------------------------- Dimensiones ----------------------------------------*/

@@ -9,6 +9,10 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     </head>
     <body>
+        <button class="btn-float" onclick="sendMessage()">
+            <img id="float-icon" src="sources/img/whatsapp.png" alt="WhatsApp" />
+        </button>
+
         <header>
             <nav class="navbar navbar-expand-md">
                 <div class="container-fluid">
@@ -19,16 +23,16 @@
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="list-unstyled navbar-nav">
                             <li class="nav-item">
-                                <a href="#precios" class="subtitulo1">Precios</a>
+                                <a href="#precios" class="subtitulo">Precios</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#demo" class="subtitulo1">Demos</a>
+                                <a href="#demo" class="subtitulo">Demos</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#descargas" class="subtitulo1">Descargas</a>
+                                <a href="#descargas" class="subtitulo">Descargas</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#contacto" class="subtitulo1">Contacto</a>
+                                <a href="#contacto" class="subtitulo">Contacto</a>
                             </li>
                         </ul>
                     </div>
@@ -41,8 +45,8 @@
                 <img src="sources/img/Dispositivos.png" alt="Bienvenida" />
             </div>
             <div class="text">
-                <p class="titulo" style="background: linear-gradient(to left, #ff8b33, #ff692d); -webkit-background-clip: text; -webkit-text-fill-color: transparent">¡Bienvenido a Magis TV!</p>
-                <p class="subtitulo2">Tu fuente de entretenimiento sin límites. Aquí encontrarás todo lo que amas: las últimas películas, series, anime, documentales, deportes en vivo y más, todo en un solo lugar. Disfruta de la mejor experiencia con contenido actualizado constantemente, sin la necesidad de cambiar de plataforma. Simplifica tu entretenimiento ¡Empieza a explorar y deja que la diversión comience!</p>
+                <p class="titulo" style="background: linear-gradient(to left, #ff8b33, #ff692d); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent">¡Bienvenido a Magis TV!</p>
+                <p class="subtitulo">Tu fuente de entretenimiento sin límites. Aquí encontrarás todo lo que amas: las últimas películas, series, anime, documentales, deportes en vivo y más, todo en un solo lugar. Disfruta de la mejor experiencia con contenido actualizado constantemente, sin la necesidad de cambiar de plataforma. Simplifica tu entretenimiento ¡Empieza a explorar y deja que la diversión comience!</p>
             </div>
         </article>
 
@@ -50,10 +54,10 @@
             <div>
                 <img src="sources/img/Logo negativo.png" alt="Logo" />
                 <p class="titulo">La mejor opción para el entretenimiento</p>
-                <p class="subtitulo2">Ahorra y disfruta con Magis TV. Accede a todo tu contenido favorito en un solo lugar, sin complicaciones y con un único pago.</p>
+                <p class="subtitulo">Ahorra y disfruta con Magis TV. Accede a todo tu contenido favorito en un solo lugar, sin complicaciones y con un único pago.</p>
                 <section class="divisa">
-                    <p class="subtitulo2 px-2">Moneda de compra:</p>
-                    <select class="form-select subtitulo2 focus-ring" id="currency" onchange="convert()">
+                    <p class="subtitulo px-2">Moneda de compra:</p>
+                    <select class="form-select subtitulo focus-ring" id="currency" onchange="convert()">
                         <option selected>USD</option>
                         <option>EUR</option>
                         <option>MXN</option>
@@ -63,7 +67,7 @@
         </section>
 
         <section class="precios">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 text-center">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 text-center justify-content-center">
                 <div class="col">
                     <div class="card rounded-3">
                         <div class="card-header py-3">
@@ -71,7 +75,7 @@
                         </div>
                         <div class="card-body rounded-bottom">
                             <h1 class="card-title pricing-card-title" id="price1">$9<small>.00</small></h1>
-                            <ul class="list-unstyled mt-3 mb-4 subtitulo2">
+                            <ul class="list-unstyled mt-3 mb-4 subtitulo">
                                 <li>3 Conexiones</li>
                                 <li>+1300 Canales</li>
                                 <li>Contenido VOD</li>
@@ -90,7 +94,7 @@
                         </div>
                         <div class="card-body rounded-bottom">
                             <h1 class="card-title pricing-card-title" id="price2">$26<small>.99</small></h1>
-                            <ul class="list-unstyled mt-3 mb-4 subtitulo2">
+                            <ul class="list-unstyled mt-3 mb-4 subtitulo">
                                 <li>3 Conexiones</li>
                                 <li>+1300 Canales</li>
                                 <li>Contenido VOD</li>
@@ -109,7 +113,7 @@
                         </div>
                         <div class="card-body rounded-bottom">
                             <h1 class="card-title pricing-card-title" id="price3">$50<small>.99</small></h1>
-                            <ul class="list-unstyled mt-3 mb-4 subtitulo2">
+                            <ul class="list-unstyled mt-3 mb-4 subtitulo">
                                 <li>+1 Mes gratis</li>
                                 <li>3 Conexiones</li>
                                 <li>+1300 Canales</li>
@@ -128,7 +132,7 @@
                         </div>
                         <div class="card-body rounded-bottom">
                             <h1 class="card-title pricing-card-title" id="price4">$90<small>.99</small></h1>
-                            <ul class="list-unstyled mt-3 mb-4 subtitulo2">
+                            <ul class="list-unstyled mt-3 mb-4 subtitulo">
                                 <li>+2 Meses gratis</li>
                                 <li>3 Conexiones</li>
                                 <li>+1300 Canales</li>
@@ -143,20 +147,7 @@
             </div>
         </section>
 
-        <article id="demo">
-            <div class="demo">
-                <div class="text">
-                    <p class="titulo" style="background: linear-gradient(to left, #f1d294, #ff991f); -webkit-background-clip: text; -webkit-text-fill-color: transparent">¿Aun no te decides? ¡Descubre todo lo que Magis TV tiene para ti!</p>
-                    <p class="subtitulo2">Explora nuestro contenido y disfruta de una experiencia única. Con Magis TV, el entretenimiento está garantizado.</p>
-                    <button type="button" class="btn btn-lg">Solicita una prueba GRATIS de 6 horas</button>
-                </div>
-                <div class="img">
-                    <img src="sources/img/Regalo.png" alt="Regalo" />
-                </div>
-            </div>
-        </article>
-
-        <section class="carrousel-fondo" id="descargas">
+        <section class="carrousel-fondo" id="demo">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="3500">
@@ -167,7 +158,7 @@
                         </picture>
                         <div class="carousel-caption">
                             <p class="titulo">Descubre los estrenos</p>
-                            <p class="subtitulo1" id="esconder">Lleva los últimos estrenos de cine directo a tu pantalla.</p>
+                            <p class="subtitulo" id="esconder">Lleva los últimos estrenos de cine directo a tu pantalla.</p>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="3500">
@@ -178,7 +169,7 @@
                         </picture>
                         <div class="carousel-caption">
                             <p class="titulo">Explora películas</p>
-                            <p class="subtitulo1" id="esconder">Encuentra todas tus películas favoritas en un solo lugar.</p>
+                            <p class="subtitulo" id="esconder">Encuentra todas tus películas favoritas en un solo lugar.</p>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="3500">
@@ -189,7 +180,7 @@
                         </picture>
                         <div class="carousel-caption">
                             <p class="titulo">Sumérgete en series</p>
-                            <p class="subtitulo1" id="esconder">No te pierdas las series más populares del momento.</p>
+                            <p class="subtitulo" id="esconder">No te pierdas las series más populares del momento.</p>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="3500">
@@ -200,7 +191,7 @@
                         </picture>
                         <div class="carousel-caption">
                             <p class="titulo">Disfruta del mejor anime</p>
-                            <p class="subtitulo1" id="esconder">Accede a una selección de animes clásicos y actuales.</p>
+                            <p class="subtitulo" id="esconder">Accede a una selección de animes clásicos y actuales.</p>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="3500">
@@ -211,7 +202,7 @@
                         </picture>
                         <div class="carousel-caption">
                             <p class="titulo">Diviértete con animación</p>
-                            <p class="subtitulo1" id="esconder">Contenidos animados para todos los gustos.</p>
+                            <p class="subtitulo" id="esconder">Contenidos animados para todos los gustos.</p>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="3500">
@@ -222,7 +213,7 @@
                         </picture>
                         <div class="carousel-caption">
                             <p class="titulo">Asombrate con documentales</p>
-                            <p class="subtitulo1" id="esconder">Explora nuevos mundos y descubre historias fascinantes.</p>
+                            <p class="subtitulo" id="esconder">Explora nuevos mundos y descubre historias fascinantes.</p>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="3500">
@@ -233,7 +224,7 @@
                         </picture>
                         <div class="carousel-caption">
                             <p class="titulo">Vive el deporte</p>
-                            <p class="subtitulo1" id="esconder">Sigue la emoción de tus deportes favoritos en cualquier momento.</p>
+                            <p class="subtitulo" id="esconder">Sigue la emoción de tus deportes favoritos en cualquier momento.</p>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="3500">
@@ -244,41 +235,54 @@
                         </picture>
                         <div class="carousel-caption">
                             <p class="titulo">Canales en vivo</p>
-                            <p class="subtitulo1" id="esconder">No te pierdas ni un segundo de tus shows favoritos, todo en vivo.</p>
+                            <p class="subtitulo" id="esconder">No te pierdas ni un segundo de tus shows favoritos, todo en vivo.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="planes" id="precios">
+        <article class="demo-fondo">
+            <div class="demo">
+                <div class="text">
+                    <p class="titulo" style="background: linear-gradient(to left, #f1d294, #ff991f); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent">¿Aun no te decides? ¡Descubre todo lo que Magis TV tiene para ti!</p>
+                    <p class="subtitulo">Explora nuestro contenido y disfruta de una experiencia única. Con Magis TV, el entretenimiento está garantizado.</p>
+                    <button type="button" class="btn btn-lg" onclick="window.open('https://forms.gle/43eFEJL1zPC2xcCx5')" title="Demo gratuita">Solicita una prueba GRATIS de 6 horas</button>
+                </div>
+                <div class="img">
+                    <img src="sources/img/Regalo.png" alt="Regalo" />
+                </div>
+            </div>
+        </article>
+
+        <section class="descargas" id="descargas">
             <div>
-                <img src="sources/img/Logo negativo.png" alt="Logo" />
+                <img src="sources/img/Descarga.png" alt="descarga" />
                 <p class="titulo">¡Descarga la aplicación aquí!</p>
-                <p class="subtitulo2">Lee detenidamente la lista de dispositivos compatibles, si tienes dudas consulta la sección <a href="#">preguntas frecuentes</a> y mira los videos de apoyo para la instalación.</p>
+                <p class="subtitulo">Lee detenidamente la lista de dispositivos compatibles, si tienes dudas consulta la sección <a href="#" style="color: white">preguntas frecuentes</a> o contáctenos.</p>
             </div>
         </section>
 
         <section class="precios">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 text-center">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 text-center justify-content-center">
                 <div class="col">
                     <div class="card rounded-3">
                         <div class="card-header py-3">
                             <h2 class="my-0 fw-normal">Teléfono o Tablet</h2>
                         </div>
                         <div class="card-body rounded-bottom">
-                            <h1 class="card-title pricing-card-title"><img src="sources/img/Icono.png" alt="Mobile" width="100rem" /></h1>
-                            <ul class="list-unstyled mt-3 mb-4 subtitulo2">
-                                <li style="background: linear-gradient(to left, #ff8b33, #ff692d); -webkit-background-clip: text; -webkit-text-fill-color: transparent">Compatible con:</li>
+                            <h1 class="card-title pricing-card-title"><img src="sources/img/Android.png" alt="Mobile" height="100rem" /></h1>
+                            <ul class="list-unstyled mt-3 mb-4 subtitulo">
+                                <li style="background: linear-gradient(to right, #12c921, #00d40b); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent">Compatible con:</li>
                                 <li>Teléfono o Tablet Android 6+</li>
                                 <li>Emulador de Android para PC</li>
-                                <li style="background: linear-gradient(to left, #ff8b33, #ff692d); -webkit-background-clip: text; -webkit-text-fill-color: transparent">Incompatible con:</li>
+                                <li style="background: linear-gradient(to right, #ff3434, #ff0000); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent">Incompatible con:</li>
                                 <li>Cualquier Iphone o Ipad</li>
                                 <li>Otros sistemas operativos</li>
                             </ul>
-                            <button type="button" class="w-100 btn btn-lg mb-3">Descarga directa</button>
-                            <button type="button" class="w-100 btn btn-lg">Onedrive</button>
-                            <div class="mt-3 subtitulo2"><a href="#">¿Cómo instalar?</a></div>
+                            <button type="button" class="w-100 btn btn-lg mb-3 directo">Descarga directa</button>
+                            <button type="button" class="w-100 btn btn-lg onedrive">Onedrive</button>
+                            <div class="mt-3 subtitulo"><a href="#" style="color: #ff8b33">¿Cómo instalar?</a></div>
                         </div>
                     </div>
                 </div>
@@ -288,23 +292,72 @@
                             <h2 class="my-0 fw-normal">Android TV o Fire TV</h2>
                         </div>
                         <div class="card-body rounded-bottom">
-                            <h1 class="card-title pricing-card-title"><img src="sources/img/Icono.png" alt="TV" width="100rem" /></h1>
-                            <ul class="list-unstyled mt-3 mb-4 subtitulo2">
-                                <li style="background: linear-gradient(to left, #ff8b33, #ff692d); -webkit-background-clip: text; -webkit-text-fill-color: transparent">Compatible con:</li>
+                            <h1 class="card-title pricing-card-title"><img src="sources/img/TV.png" alt="TV" height="100rem" /></h1>
+                            <ul class="list-unstyled mt-3 mb-4 subtitulo">
+                                <li style="background: linear-gradient(to right, #12c921, #00d40b); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent">Compatible con:</li>
                                 <li>Android TV, Google TV, TV Box</li>
                                 <li>Fire TV y Fire TV Stick cualquiera</li>
-                                <li style="background: linear-gradient(to left, #ff8b33, #ff692d); -webkit-background-clip: text; -webkit-text-fill-color: transparent">Incompatible con:</li>
+                                <li style="background: linear-gradient(to right, #ff3434, #ff0000); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent">Incompatible con:</li>
                                 <li>Apple TV, Roku, LG WebOS</li>
                                 <li>y Samsung Tizen</li>
                             </ul>
-                            <button type="button" class="w-100 btn btn-lg mb-3">Descarga directa</button>
-                            <button type="button" class="w-100 btn btn-lg">Onedrive</button>
-                            <div class="mt-3 subtitulo2"><a href="#">¿Cómo instalar?</a></div>
+                            <button type="button" class="w-100 btn btn-lg mb-3 directo">Descarga directa</button>
+                            <button type="button" class="w-100 btn btn-lg onedrive">Onedrive</button>
+                            <div class="mt-3 subtitulo"><a href="#" style="color: #ff8b33">¿Cómo instalar?</a></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="contacto" id="contacto">
+            <div class="img" id="esconder">
+                <img src="sources/img/Contacto.png" alt="Contacto" />
+            </div>
+            <div class="text">
+                <p class="titulo" style="background: linear-gradient(to left, #ff8b33, #ff692d); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent">¿Listo para empezar? Aquí nos puedes encontrar:</p>
+                <div class="row text-center row-cols-2 row-cols-md-2 row-cols-lg-4 p-0">
+                    <div class="col enlace">
+                        <a href="#">
+                            <img src="sources/img/whatsapp.png" alt="WhatsApp" class="icono" />
+                            <p class="subtitulo pt-2" style="color: #29a71a">+52 271 123 4567</p>
+                        </a>
+                    </div>
+                    <div class="col enlace">
+                        <a href="#">
+                            <img src="sources/img/telegram.png" alt="Telegram" class="icono" />
+                            <p class="subtitulo pt-2" style="color: #039be5">+52 271 123 4567</p>
+                        </a>
+                    </div>
+                    <div class="col enlace">
+                        <a href="#">
+                            <img src="sources/img/facebook.png" alt="Facebook" class="icono" />
+                            <p class="subtitulo pt-2" style="color: #1877f2">Magis TV</p>
+                        </a>
+                    </div>
+                    <div class="col enlace">
+                        <a href="#">
+                            <img src="sources/img/instagram.png" alt="Instagram" class="icono" />
+                            <p class="subtitulo pt-2" style="color: #ffd320">Magis TV</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="row align-items-center text-center p-0">
+                    <div class="d-flex align-items-center gap-2 justify-content-center p-0 enlace">
+                        <img src="sources/img/gmail.png" alt="Gmail" class="correo" />
+                        <a href="mailto:contacto.soporte.magis@gmail.com" class="subtitulo" style="color: white; text-decoration: none">contacto.soporte.magis@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="container-fluid">
+            <div class="row justify-content-center align-items-center text-center px-4">
+                <div class="col col-lg-2 col-md-4">Descargo de responsabilidad</div>
+                <div class="col col-lg-2 col-md-3">Preguntas frecuentes</div>
+                <div class="col col-lg-2 col-md-3">© 2024 Magis TV</div>
+            </div>
+        </footer>
 
         <script src="sources/js/main.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

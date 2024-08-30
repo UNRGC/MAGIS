@@ -44,3 +44,33 @@ function convert() {
     document.getElementById("price4").innerHTML = "$" + result4.split(".")[0] + "<small>." + result4.split(".")[1] + "</small>";
     localStorage.setItem("moneda", currency);
 }
+
+function sendMessage() {
+    // Aquí puedes agregar la lógica para enviar un mensaje
+    alert("Mensaje enviado!");
+}
+
+// Cambiar la imagen del botón cada 10 segundos
+const floatIcon = document.getElementById("float-icon");
+let isWhatsApp = true;
+
+setInterval(() => {
+    if (isWhatsApp) {
+        floatIcon.src = "sources/img/telegram.png";
+        floatIcon.alt = "Telegram";
+        floatIcon.style.transform = "scale(1.2)";
+        floatIcon.style.transition = "transform 0.5s ease-in-out";
+        setTimeout(() => {
+            floatIcon.style.transform = "scale(1)";
+        }, 500);
+    } else {
+        floatIcon.src = "sources/img/whatsapp.png";
+        floatIcon.alt = "WhatsApp";
+        floatIcon.style.transform = "scale(1.2)";
+        floatIcon.style.transition = "transform 0.5s ease-in-out";
+        setTimeout(() => {
+            floatIcon.style.transform = "scale(1)";
+        }, 500);
+    }
+    isWhatsApp = !isWhatsApp;
+}, 10000);
